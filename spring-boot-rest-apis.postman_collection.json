@@ -1,0 +1,91 @@
+{
+	"info": {
+		"_postman_id": "a58d7d81-4e38-420d-90dd-e5d05b32b9a4",
+		"name": "spring-boot-rest-apis",
+		"schema": "https://schema.getpostman.com/json/collection/v2.0.0/collection.json",
+		"_exporter_id": "10122914"
+	},
+	"item": [
+		{
+			"name": "All Student",
+			"request": {
+				"method": "GET",
+				"header": [],
+				"url": "localhost:8081/api/v1/student"
+			},
+			"response": []
+		},
+		{
+			"name": "Student By ID",
+			"request": {
+				"method": "GET",
+				"header": [],
+				"url": {
+					"raw": "localhost:8081/api/v1/student/student-id?id=1",
+					"host": [
+						"localhost"
+					],
+					"port": "8081",
+					"path": [
+						"api",
+						"v1",
+						"student",
+						"student-id"
+					],
+					"query": [
+						{
+							"key": "id",
+							"value": "1"
+						}
+					]
+				}
+			},
+			"response": []
+		},
+		{
+			"name": "Add Student",
+			"request": {
+				"method": "POST",
+				"header": [],
+				"body": {
+					"mode": "raw",
+					"raw": "{\r\n    \"name\": \"Student11\",\r\n    \"standard\": 11,\r\n    \"section\": \"A\"\r\n}",
+					"options": {
+						"raw": {
+							"language": "json"
+						}
+					}
+				},
+				"url": "localhost:8081/api/v1/student"
+			},
+			"response": []
+		},
+		{
+			"name": "Update Student",
+			"request": {
+				"method": "PUT",
+				"header": [],
+				"body": {
+					"mode": "raw",
+					"raw": "{\r\n    \"name\": \"Student11\",\r\n    \"standard\": 11,\r\n    \"section\": \"A\"\r\n}",
+					"options": {
+						"raw": {
+							"language": "json"
+						}
+					}
+				},
+				"url": "localhost:8081/api/v1/student/1"
+			},
+			"response": []
+		},
+		{
+			"name": "Delete Student",
+			"request": {
+				"method": "DELETE",
+				"header": [],
+				"url": "localhost:8081/api/v1/student/1"
+			},
+			"response": []
+		}
+	]
+}
