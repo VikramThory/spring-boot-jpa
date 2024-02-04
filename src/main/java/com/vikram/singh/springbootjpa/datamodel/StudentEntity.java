@@ -1,6 +1,5 @@
 package com.vikram.singh.springbootjpa.datamodel;
 
-import com.vikram.singh.springbootjpa.dto.BaseEntity;
 import jakarta.persistence.Entity;
 import jakarta.persistence.Table;
 import jakarta.persistence.Id;

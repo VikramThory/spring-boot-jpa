@@ -1,4 +1,4 @@
-package com.vikram.singh.springbootjpa.dto;
+package com.vikram.singh.springbootjpa.datamodel;
 
 import jakarta.persistence.Column;
 import jakarta.persistence.MappedSuperclass;
